@@ -1,0 +1,20 @@
+body {
+    background-image: url("../images/background.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+#content {
+    background-color: #f3d0d7;
+    margin: 75px 250px;
+    padding: 20px 0;
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Didact Gothic', sans-serif;
+    font-size: 300%;
+    margin: 25px 0;
+    letter-spacing: .1em;
+}
