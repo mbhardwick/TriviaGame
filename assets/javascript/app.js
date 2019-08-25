@@ -44,7 +44,7 @@ $(document).ready(function() {
     var game = {
         correct: 0,
         incorrect: 0,
-        counter: 20,
+        counter: 120,
         countdown: function() {
             game.counter--;
             $("#counter").html(game.counter);
@@ -130,7 +130,7 @@ $(document).ready(function() {
             clearInterval(timer);
             $("#subwrapper h2").remove()
             $("#subwrapper").html("<h2>All Done! You're a pal and a confidant!</h2>");
-            $("#subwrapper").html("<img id='squad' src='assets/images/squad.jpg' alt='The Squad'/>")
+            $("#subwrapper").append("<img id='squad' src='assets/images/squad.jpg' alt='The Squad'/>");
             $("#subwrapper").append("<h3>Correct Answers: " + this.correct + "</h3>");
             $("#subwrapper").append("<h3>Incorrect Answers: " + this.incorrect + "</h3>");
             $("#subwrapper").append("<h3>Unanswered: " + (questions.length-(this.incorrect+this.correct)) + "</h3>")
